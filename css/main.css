@@ -11,7 +11,6 @@ input {
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
-
 *,
 :after,
 :before {
@@ -28,7 +27,7 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family: 'vetica';
+  font-family: sans;
   font-feature-settings: normal;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
@@ -67,7 +66,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'vetica', Helvetica Neue, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-size: 1em;
@@ -1306,19 +1306,19 @@ video {
   resize: both;
 }
 .grid-cols-1 {
-  -ms-grid-columns: (minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr)) 1;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-2 {
-  -ms-grid-columns: (minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr)) 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-5 {
-  -ms-grid-columns: (minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr)) 5;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .grid-cols-6 {
-  -ms-grid-columns: (minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr)) 6;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-row {
@@ -1940,10 +1940,10 @@ video {
   vertical-align: bottom;
 }
 .font-disp {
-  font-family: 'vetica';
+  font-family: disp;
 }
 .font-sans {
-  font-family: 'vetica';
+  font-family: sans;
 }
 .text-100 {
   font-size: 10rem;
@@ -2203,8 +2203,38 @@ video {
 .will-change-transform {
   will-change: transform;
 }
-
-
+@font-face {
+  font-family: sans;
+  src: url('/src/fonts/601bbc5a1ec23d4e2da66bd8_font.woff2') format('woff2'),
+       url('/src/fonts/601bbc5a1ec23d4e2da66bd8_font.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: sans;
+  src: url('/src/fonts/601bbc5a1ec23d4e2da66bd8_font.woff2') format('woff2'),
+       url('/src/fonts/601bbc5a1ec23d4e2da66bd8_font.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: sans;
+  src: url('/src/fonts/601bbc5a1ec23d4e2da66bd8_font.woff2') format('woff2'),
+       url('/src/fonts/601bbc5a1ec23d4e2da66bd8_font.woff2') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: disp;
+  font-display: swap;
+  src: url('/src/fonts/601bbc8d3a976f8506dc476c_font.woff2') format('woff2'),
+       url('/src/fonts/601bbc8d3a976f8506dc476c_font.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 .gfield {
   position: relative;
 }
@@ -2958,7 +2988,7 @@ html {
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
-  font-family: 'vetica';
+  font-family: sans;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.35;
@@ -3007,7 +3037,7 @@ html.lenis body {
   display: grid;
   width: 100%;
   max-width: 133.8rem;
-  -ms-grid-columns: (minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr)) 6;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   -moz-column-gap: 1.3rem;
   column-gap: 1.3rem;
@@ -3016,7 +3046,7 @@ html.lenis body {
 }
 @media (min-width: 650px) {
   .site-grid {
-    -ms-grid-columns: (minmax(0, 1fr)) ;
+    -ms-grid-columns: (minmax(0, 1fr)) 12;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     -moz-column-gap: 2.4rem;
     column-gap: 2.4rem;
@@ -3055,7 +3085,7 @@ html.lenis body {
   }
 }
 .h1 {
-  font-family: 'vetica';
+  font-family: disp;
   font-size: 6.4rem;
   font-weight: 500;
   line-height: 1;
@@ -3066,7 +3096,7 @@ html.lenis body {
   }
 }
 .h2 {
-  font-family: 'vetica';
+  font-family: disp;
   font-size: 5rem;
   font-weight: 500;
   line-height: 1;
@@ -4714,11 +4744,11 @@ h4 {
       scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
   .s\:grid-cols-2 {
-    -ms-grid-columns: (minmax(0, 1fr));
+    -ms-grid-columns: (minmax(0, 1fr)) 2;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .s\:grid-cols-5 {
-    -ms-grid-columns: (minmax(0, 1fr));
+    -ms-grid-columns: (minmax(0, 1fr)) 5;
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .s\:flex-row {
@@ -5099,7 +5129,7 @@ h4 {
   .s\:leading-\[5rem\] {
     line-height: 5rem;
   }
-
+}
 @media (max-width: 650px) {
   .smax\:order-1 {
     order: 1;
@@ -5236,6 +5266,4 @@ h4 {
   .mh-m\:text-10 {
     font-size: 1rem;
   }
-}
-
 }
