@@ -237,12 +237,12 @@ video {
   --tw-scale-y: 1;
   --tw-scroll-snap-strictness: proximity;
   --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-color: #E2E1DF;
   --tw-ring-color: rgb(59 130 246/0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
+  --tw-ring-offset-shadow: 0 0 #1111110;
+  --tw-ring-shadow: 0 0 #1111110;
+  --tw-shadow: 0 0 #1111110;
+  --tw-shadow-colored: 0 0 #1111110;
 }
 ::backdrop {
   --tw-border-spacing-x: 0;
@@ -256,12 +256,12 @@ video {
   --tw-scale-y: 1;
   --tw-scroll-snap-strictness: proximity;
   --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-color: #E2E1DF;
   --tw-ring-color: rgb(59 130 246/0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
+  --tw-ring-offset-shadow: 0 0 #1111110;
+  --tw-ring-shadow: 0 0 #1111110;
+  --tw-shadow: 0 0 #1111110;
+  --tw-shadow-colored: 0 0 #1111110;
 }
 .container {
   width: 100%;
@@ -1573,7 +1573,7 @@ video {
   fill: currentColor;
 }
 .fill-white {
-  fill: #fff;
+  fill: #E2E1DF;
 }
 .stroke-current {
   stroke: currentColor;
@@ -2232,7 +2232,7 @@ video {
   font-display: swap;
   src: url('/src/fonts/601bbc8d3a976f8506dc476c_font.woff2') format('woff2'),
        url('/src/fonts/601bbc8d3a976f8506dc476c_font.woff2') format('woff');
-  font-weight: 500;
+  font-weight: 1000;
   font-style: normal;
 }
 .gfield {
@@ -2540,7 +2540,7 @@ fieldset#field_3_35:before {
   display: inline-block;
   height: 2rem;
   width: 2rem;
-  border: 0.4rem solid #f2f2f2;
+  border: 0.4rem solid #E2E1DF;
   content: "";
   border-radius: 50%;
 }
@@ -2549,7 +2549,7 @@ fieldset#field_3_35:before {
   top: 50%;
   left: 0;
   line-height: 1;
-  background: #000;
+  background: #111111;
   transform: translateY(-50%);
 }
 .gfield_list_group_item {
@@ -2635,7 +2635,7 @@ fieldset#field_3_35:before {
 }
 .form-download-book-free-chapter .gfield_html_formatted {
   font-size: 2rem;
-  color: #000;
+  color: #111111;
   line-height: 1.3;
   max-width: unset;
   margin-bottom: 2rem;
@@ -2672,7 +2672,7 @@ fieldset#field_3_35:before {
 }
 .custom-form .gfield_html_formatted {
   font-size: 2rem;
-  color: #000;
+  color: #111111;
   line-height: 1.3;
   max-width: unset;
   margin-bottom: 2rem;
@@ -2820,11 +2820,11 @@ fieldset#field_3_35:before {
   color: rgb(132 132 132 / var(--tw-text-opacity));
 }
 .form-nl-subs.form-nl-subs-theme-dark input:not([type="submit"]) {
-  border-bottom-color: #000;
+  border-bottom-color: #111111;
 }
 .form-nl-subs.form-nl-subs-theme-dark #field_submit input {
   background-color: transparent;
-  color: #000;
+  color: #111111;
 }
 .form-nl-subs .gform_ajax_spinner {
   --tw-bg-opacity: 1;
@@ -2895,8 +2895,8 @@ fieldset#field_3_35:before {
 .form-popup-early-access input[type="submit"] {
   margin: auto;
   display: block;
-  background-color: #fff;
-  color: #000;
+  background-color: #E2E1DF;
+  color: #111111;
 }
 @media (max-width: 650px) {
   .form-popup-early-access input[type="submit"] {
@@ -3332,7 +3332,7 @@ h4 {
   display: none;
 }
 .radius-fix {
-  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+  -webkit-mask-image: -webkit-radial-gradient(#E2E1DF, #111111);
 }
 .js-switcher-tabs {
   transition: opacity 0.2s;
@@ -3662,20 +3662,20 @@ h4 {
   justify-content: center;
   min-width: 41rem;
   height: 41rem;
-  background-color: #fff;
+  background-color: #E2E1DF;
   border-radius: 999px;
   text-align: center;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 .orb-ball-big.is-active {
-  background-color: #000;
-  color: #fff;
+  background-color: #111111;
+  color: #E2E1DF;
 }
 .orb-ball-small {
   position: absolute;
   height: 4.8rem;
   width: 4.8rem;
-  background-color: #fff;
+  background-color: #E2E1DF;
   border-radius: 999px;
   top: calc(50% - 2.4rem);
   left: calc(50% - 2.4rem);
@@ -3691,7 +3691,7 @@ h4 {
   padding: 1rem;
 }
 .orb-ball-small.is-active {
-  background-color: #000;
+  background-color: #111111;
 }
 .orb-wrap {
   display: none;
@@ -3869,7 +3869,7 @@ h4 {
   bottom: 0;
   width: 100%;
   height: 7rem;
-  background: linear-gradient(0deg, #f2f2f2, hsla(0, 0%, 95%, 0));
+  background: linear-gradient(0deg, #E2E1DF, hsla(0, 0%, 95%, 0));
   z-index: 1;
 }
 .transcript .txt.--less-margin h2,
@@ -5259,7 +5259,7 @@ h4 {
     display: none;
   }
 }
-@media (min-height: 1000px) {
+@media (min-height: 1111111px) {
   .mh-m\:pb-80 {
     padding-bottom: 8rem;
   }
